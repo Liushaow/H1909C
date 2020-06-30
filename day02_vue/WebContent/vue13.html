@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src = "./js/vue.js"></script>
+
+
+
+</head>
+<body>
+	<div id="app">
+		<userin></userin>
+	</div>
+	<script type="text/javascript">
+		
+		const  login={
+			template:"<form>用户名:<input>密码:<input type='password'><input type='submit' value = '登录'></form>"
+		}
+	
+		var app = new Vue({
+			el:"#app",
+			data:{
+				
+			},
+			components:{
+				userin:login
+			}
+		})
+	</script>
+</body>
+</html>
